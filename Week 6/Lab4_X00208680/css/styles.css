@@ -1,0 +1,19 @@
+.container {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  color: #000000; /* Text colour */
+  padding: 1rem;
+}
+
+#userDetailsForm {
+  background-color: lightskyblue;
+  color: black;
+  width: 60%;
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+#newStyle {
+  color: white;
+  font-size: 2em;
+}
