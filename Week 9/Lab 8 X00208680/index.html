@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 8 - Loops</title>
+    
+    <!-- Link to Bootstrap Stylesheets-->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+   <!-- Link to My Stylesheet-->
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+<body>
+    
+    <div class="container">
+
+        <section id="loops">
+
+            <h3 id="formHeading">Loops</h3>
+
+            <form id="loopsForm" class="p-2">
+
+                <div class="mb-4">
+                    <label for="iterations" class="form-label">How many iterations?</label>
+                    <input type="number" class="form-control" id="iterations" value="4">
+                </div>
+                <div class="mb-4">
+                    <label for="fullName" class="form-label">Enter your name</label>
+                    <input type="text" class="form-control" id="fullName" value="Ben Walsh">
+                </div>
+                <div class="mb-4">
+                    <label for="password" class="form-label">Enter your password</label>
+                    <input type="password" class="form-control" id="password" value="1234">
+                </div>
+                <div class="mb-4">
+                    <label for="confirmPass" class="form-label">Confirm password</label>
+                    <input type="password" class="form-control" id="confirmPass" value="1234">
+                </div>
+
+                <div class="p-2">
+                    <button class="btn btn-primary" type="button" id="consoleButton">Write to Console</button>
+                    <button class="btn btn-success" type="button" id="spacesButton">Add Spaces</button>
+                    <button class="btn btn-warning" type="button" id="paraButton">Add Paragraphs</button>
+                </div>
+                <div class="p-2">
+                    <button class="btn btn-secondary" type="button" id="textBoxButton">Add Text boxes</button>
+                    <button class="btn btn-info" type="button" id="namesButton">Get All Names</button>
+                    <button class="btn btn-danger" type="button" id="passwordButton">Check passwords match</button>
+                    
+                </div>
+
+                <div id="moreParagraphs">
+
+                </div>
+            
+            </form>
+        </section>
+        
+    </div> <!-- End of div container-->
+
+     <!-- Link to My JavaScript file -->
+     <script src="scripts/myScripts.js"></script>
+     
+    <!-- Link to Bootstrap JS file -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
