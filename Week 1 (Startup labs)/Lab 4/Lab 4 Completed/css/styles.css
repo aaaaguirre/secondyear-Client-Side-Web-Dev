@@ -1,0 +1,32 @@
+body {
+    font-family:Verdana, Arial, sans-serif;
+    padding-left: 1em; 
+    font-size: x-large; 
+    background-color: sandybrown;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+th, td {
+    text-align: left; 
+    border: 2px solid black; 
+    padding: 0.5em;
+}
+
+th {
+    background: dodgerblue;
+}
+
+td {
+    background: deepskyblue;
+}
+
+table caption {
+    text-align: left; padding-bottom: 0.5em;
+}
+
+td:last-child {
+    text-align: center;
+}

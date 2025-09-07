@@ -1,0 +1,88 @@
+﻿body
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    color: #000000;
+    background-color: #C0C0C0; /* Page colour */
+}
+
+#container
+{
+    border: 1px solid #FF0000;
+    background-color: #FFFFFF;
+    width: 80%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-left:auto;
+    margin-right:auto;
+    padding: 1rem;
+}
+
+
+footer
+{
+    font-size: small;
+    font-weight: bold;
+    margin: 2rem 0 0 0;
+    clear: both;
+}
+
+header h3 {
+    font-size: 1.5rem;
+}
+
+/* Exercise: add rules for the selectors given below  */
+
+article{
+    /* In order to get the pictures to 'line up' rather than be desplayed
+       below each other, we use the float property. The number of these
+       that appear in a row depends on the width of the window.*/
+    /* Checklist items addressed: a,b */
+    float: left;
+
+    /* We set the height and width to what looks approximately right in
+       relation to text size, based on the picture in the assignment. */
+    /* Checklist items addressed: c */
+    height: 18rem;
+    width: 15rem;
+
+    /* We apply borders, padding and margin*/
+    /* Checklist items addressed: e */
+    border: 1px dotted red;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+article img {
+    /* We limit the image heights so that they fit in the client panels
+       and also leave space for the text below them. */
+    /* Checklist items addressed: d */
+    max-width: 100%;
+    max-height: 50%;
+}
+
+
+article h4{
+    /* We format the title text */
+    /* Checklist items addressed: f */
+    font-size: 1.25rem;
+    margin: 0.5rem 0;
+    font-weight: bold;
+    color: blue;
+}
+
+article a{
+    /* We format the link text */
+    /* Checklist items addressed: f */
+    font-size: 0.75rem;
+    font-weight: bold;
+    color: red;
+    text-decoration: none;
+}
+
+section p {
+    /* Make sure that the paragraph is not placed to the 
+       right of the floating elements */
+    /* Checklist items addressed: g */
+    clear: both;
+}

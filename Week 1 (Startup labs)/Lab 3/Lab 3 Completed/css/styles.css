@@ -1,0 +1,95 @@
+body {
+    font-family:Verdana, Arial, sans-serif;
+    background-color: #A66A00;
+}
+
+#container { 
+    background-color: #FFDC73;
+    /* We make the container a percentage of the width and don't let it get to wide (limit it to 800px). */
+    /* Ex3 point addressed: a */ 
+    width: 70%;
+    max-width: 800px;
+    /* To center the container, we just set the margins to auto, as centering is the default. */
+    /* Ex3 point addressed: a */ 
+    margin: auto;
+}
+
+header { 
+    background-image: url(../images/logo.png);
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    background-color: #FFBF00;
+    /* We format the header text so that it matches the picture. */
+    /* Ex3 point addressed: c */
+    color: #ffffff; 
+    font-size: 1.5rem; 
+    padding: 1rem 1rem 1rem 9rem;
+}
+
+nav {
+    /* We let the nav element float to the left. Also, we increase the letter spacing 
+		and set the font weight to bold. */
+    /* Ex3 point addressed: d */
+    width: 20%;
+    float: left;
+    letter-spacing:0.1rem;
+    font-weight: bold;
+}
+
+
+section {  
+    overflow: auto;
+    background-color: #ffffff;
+    /* We pad the content text. */
+    /* Ex3 point addressed: d */
+    padding: 1rem 1.5rem;
+}
+
+footer {
+    /* We format the bottom section. */
+    /* Ex3 point addressed: d */
+    background-color: #FF9200;
+    font-size:70%;
+    text-align: center;
+    padding: 1rem;
+}
+
+h2 {
+    /* We change the color of the content headers. */
+    /* Ex3 point addressed: d */
+    color: #A68500; 
+    font-family: arial, sans-serif;
+}
+
+nav ul {
+    /* We set the list style to 'none' to remove the bullets. */
+    /* Ex3 point addressed: b */ 
+    list-style-type: none; 
+    /* We remove the margin and padding for the list of links, to match the picture. */
+    /* Ex3 point addressed: b */ 
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    display: block;
+    background-color: #FFCF40;	
+    /* We remove text decoration, so that the link text is not underlined. */
+    /* Ex3 point addressed: b */ 
+    text-decoration: none;
+    /* We add some padding, so that the blocks are a bit wider, as in the requirements picture. */
+    /* Ex3 point addressed: b */ 
+    padding: 2rem;   
+    /* We add a bottom border to match the white lines in the requirements picture. */
+    /* Ex3 point addressed: b */ 
+    border-bottom: 1px solid #ffffff;
+    /* We make the text white. */
+    /* Ex3 point addressed: b */ 
+    color: #ffffff;
+}
+
+nav a:hover {
+    /* We specify a different background for a hovered link. */
+    /* Ex3 point addressed: b */ 
+    background-color: #A67C00;
+}

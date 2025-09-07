@@ -1,0 +1,113 @@
+body {
+    font-family:Verdana, Arial, sans-serif;
+    background-color: #A66A00;
+}
+
+#container { 
+    /* Add background color */
+    background-color: white;
+
+    /* We make the container a percentage of the width and don't let it get to wide (limit it to 800px). */
+
+    width: 80%;
+    max-width: 800px;
+
+    /* To center the container, we just set the margins to auto, as centering is the default. */
+    margin: auto;
+
+
+}
+
+header { 
+    /* Add background image/color hint - background-image: url() */
+    background-image: url(../images/logo.png);
+    background-repeat: no-repeat;
+    background-color: orange;
+    background-size: auto 100%;
+
+    /* We format the header text so that it matches the picture. */
+    font-size: 2rem;
+    color: white;
+    padding: 1em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+
+    
+}
+
+nav {
+    /* We let the nav element float to the left. Also, we increase the letter spacing 
+		and set the font weight to bold. */
+        float: left;
+        font-weight: bold;
+        width: 20%;
+    
+}
+
+
+section {
+    /* add overflow and background color */
+    overflow: auto;
+    background-color: white;
+
+    /* We pad the content text. */
+    padding: 1em;
+
+    
+}
+
+footer {
+    /* We format the bottom section. */
+    background-color: orange;
+    text-align: center;
+    padding: 1em;
+
+    
+}
+
+h2 {
+    /* We change the color of the content headers. */
+    color: #A66A00;
+
+    
+}
+
+nav ul {
+    /* We set the list style to 'none' to remove the bullets. */
+
+    list-style-type: none; 
+
+    /* We remove the margin and padding for the list of links, to match the picture. */
+    margin: 0;
+    padding: 0;
+    
+    
+}
+
+nav a {
+    /* add display block and bacground color */
+    display: block;
+    background-color: #FFCF40;	
+    
+    /* We remove text decoration, so that the link text is not underlined. */
+    text-decoration: none;
+
+    /* We add some padding, so that the blocks are a bit wider, as in the requirements picture. */
+    padding: 2em;
+      
+    /* We add a bottom border to match the white lines in the requirements picture. */
+    border-bottom: 1px solid white;
+    
+
+    /* We make the text white. */
+    color: white;
+    
+}
+
+nav a:hover {
+    /* We specify a different background for a hovered link. */
+    background-color: #A67C00;
+
+}

@@ -1,0 +1,51 @@
+/*/Colours used 
+#56448e
+#47b6e7
+#d35aa9
+#bf2b8d 
+/*/
+body {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 2rem;
+}
+
+header {
+  border: 1px dashed;
+  background-color: white;
+  margin: .5rem;
+}
+
+nav {
+  border: 1px solid;
+  background-color: #56448e;
+}
+
+ul {
+  padding-left: 0.25rem;
+}
+
+li {
+  display: inline;
+  padding-right: 4rem;
+}
+
+section {
+  border: 1px solid;
+  background-color: #47b6e7;
+  padding: 2rem;
+}
+
+article {
+  border: 1px solid;
+  background-color: #d35aa9;
+  padding: 2rem;
+}
+
+footer {
+  border: 1px solid;
+  background-color: #bf2b8d;
+  font-size: 1rem;
+  text-align: center;
+  padding: 1rem;
+  color: white;
+}
