@@ -1,0 +1,27 @@
+.container {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  color: #000000; /* Text colour */
+  padding: 1rem;
+}
+
+#arraysForm {
+  background-color: lightskyblue;
+  color: black;
+  width: 70%;
+  font-weight: bold;
+}
+
+.form-control {
+  width: 70%;
+  border: 1px solid black;
+}
+
+#allStudentsData {
+  color: black;
+  width: 60%;
+}
+
+#allStudentsData table {
+  width: 100%;
+}

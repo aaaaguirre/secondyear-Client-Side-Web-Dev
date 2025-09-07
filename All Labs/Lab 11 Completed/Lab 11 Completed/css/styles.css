@@ -1,0 +1,19 @@
+.container {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1em;
+  color: #000000; /* Text colour */
+  padding: 1rem;
+}
+
+#objectsForm {
+  background-color: lightskyblue;
+  border: 1px solid;
+  padding: 1rem;
+  color: white;
+  width: 50%;
+}
+
+.form-group {
+  max-width: 30%;
+  padding: .5rem;
+}
