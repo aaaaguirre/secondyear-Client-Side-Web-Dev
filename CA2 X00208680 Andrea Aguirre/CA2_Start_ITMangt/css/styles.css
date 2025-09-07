@@ -1,0 +1,17 @@
+.container {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  color: #000000; /* Text colour */
+  padding: 1rem;
+}
+
+#hotelForm {
+  background-color: lightskyblue;
+  color: black;
+  width: 40%;
+  font-weight: bold;
+}
+
+.form-control, .form-select {
+  width: 80%;
+}

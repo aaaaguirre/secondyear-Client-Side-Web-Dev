@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CA 2</title>
+
+    <!-- Link to Bootstrap Stylesheet-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!-- Link to My Stylesheet-->
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <section id="hotelGuests">
+
+            <h3 id="formHeading">Hotel Guests</h3>
+            
+            <form id="hotelForm" class="p-2">
+
+                <div class="mb-4">
+                    <img id="hotelStatusImg" src="images/open.jpg">
+                </div>
+                <div class="mb-4">
+                    <label for="guestName" class="form-label">Guest Name</label>
+                    <input type="text" id="guestName" class="form-control" value="Ben Walsh">
+                </div>
+                <div class="mb-4">
+                    <label for="boardType" class="form-label"onclick="selectBoardType();">Board Type</label>
+                    <select id="boardType" class="form-select">
+                        <option value="None" selected >Choose Board Type</option>
+                        <option value="SC">Self Catering</option>
+                        <option value="HB">Half Board</option>
+                        <option value="AI">All Inclusive</option>
+                    </select>
+                </div>
+                <div class="mb-4">
+                    <label for="numDays" class="form-label"onclick="addDays();">Days</label>
+                    <input type="number" id="numDays" class="form-control" value="3">
+                </div>
+                
+                <div class="p-2">
+                    <button class="btn btn-primary" type="button" id="DublinButton"onclick="selectBoardType();">Dublin Hotel</button>
+                    <button class="btn btn-success" type="button" id="ChicagoButton"onclick="selectBoardType();">Chicago Hotel</button>
+                    <button class="btn btn-warning" type="button" id="SydneyButton"onclick="selectBoardType();">Sydney Hotel</button>
+                </div>
+                <div class="p-2">
+                    <button class="btn btn-dark" type="button" id="generateReportButton">Generate Report</button>
+                    <button class="btn btn-secondary" type="button" id="boardTypeReportButton"onclick="showHotelBookingDetails()">Board Type Report</button>
+                    <button class="btn btn-danger" type="button" id="updateStylesButton">Update Styles</button>
+                </div>
+            </form>
+
+        </section>
+        
+        <br>
+        <section id="report">
+            
+            <div id="hotelsSummaryReport">
+            </div>
+            
+            <br>
+            <div class="row">
+                <div class="col-4" id="DublinReport"></div>
+                <div class="col-4" id="ChicagoReport"></div>
+                <div class="col-4" id="SydneyReport"></div>
+            </div>
+
+            <br>
+            <div id="boardTypeReport">
+            </div>
+            
+        </section>
+
+    </div> <!-- End of div container-->
+
+    <!-- Link to My JavaScript file -->
+    <script src="scripts/myScripts.js"></script>
+
+    <!-- Link to Bootstrap JS file -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+
+</html>
