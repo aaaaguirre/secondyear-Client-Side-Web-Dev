@@ -1,0 +1,17 @@
+.container {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  color: #000000; /* Text colour */
+  padding: 1rem;
+}
+
+#paymentForm {
+  background-color: lightskyblue;
+  color: black;
+  width: 60%;
+  font-weight: bold;
+}
+
+.form-control {
+  width: 40%;
+}

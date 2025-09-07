@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 5 - Functions</title>
+    
+    <!-- Link to Bootstrap Stylesheet. -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+   <!-- Link to My Stylesheet-->
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+<body onload="pageLoading();">
+    
+    <div class="container">
+
+        <section id="calculator">
+
+            <h3 id="formHeading">Calculator</h3>
+            
+            <form id="calculatorForm" class="p-2">
+            
+                <div class="mb-4">
+                    <label for="firstNumber" class="form-label">First Number</label>
+                    <input type="number" class="form-control" id="firstNumber" value="2">
+                </div>
+
+                <div class="mb-4">
+                    <label for="secondNumber" class="form-label">Second Number</label>
+                    <input type="number" class="form-control" id="secondNumber" value="4">
+                </div>
+
+                <div class="mb-4">
+                    <label for="result" class="form-label">Result</label>
+                    <input type="number" class="form-control" id="result" value="">
+                </div>
+
+                <div class="mb-4">
+                    <p id="summaryText"></p>
+                </div>
+
+                <div class="p-2">
+                    <button class="btn btn-primary" type="button" id="addButton" onclick="addNumbers();">Add</button>
+                    <button class="btn btn-success" type="button" id="subtractButton" onclick="subtractNumbers();">Subtract</button>
+                    <button class="btn btn-warning" type="button" id="multiplyButton" onclick="multiplyNumbers();">Multiply</button>
+                    <button class="btn btn-secondary" type="button" id="divideButton" onclick="divideNumbers();">Divide</button>
+                    <button class="btn btn-danger" type="button" id="divideButton" onclick="summariseNumbers();">Summary</button>
+                </div>
+
+                <div class="p-2">
+                        <!-- Large Bootstrap Buttons -->
+
+                        <button type="button" class="btn btn-primary btn-lg me-2" onmouseover="colourCheck('blue')">Blue </button>
+
+                        <button type="button" class="btn btn-danger btn-lg me-2" onmouseover="colourCheck('red')">Red</button>
+
+                        <button type="button" class="btn btn-success btn-lg me-2" onmouseover="colourCheck('green')">Green</button>
+
+                        <button type="button" class="btn btn-warning btn-lg me-2" onmouseover="colourCheck('yellow')">Yellow</button>
+                </div>
+            </form>
+        </section>
+        
+    </div> <!-- End of div container-->
+
+     <!-- Link to My JavaScript file -->
+     <script src="scripts/myScripts.js"></script>
+     
+    <!-- Link to Bootstrap JS file -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
