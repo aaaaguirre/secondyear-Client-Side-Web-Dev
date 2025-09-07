@@ -1,0 +1,21 @@
+body{background-color: gray;}
+
+h1{color: white;
+text-align: center;}
+
+ul {
+
+    height: 100%;
+    padding: 0rem;
+  }
+  
+  li {
+
+    display: inline; 
+    
+    padding-right: 2rem;
+  }
+  
+  li a {
+    color:blue;
+  }

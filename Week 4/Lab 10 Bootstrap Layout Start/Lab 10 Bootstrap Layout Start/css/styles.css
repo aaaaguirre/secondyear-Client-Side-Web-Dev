@@ -1,0 +1,31 @@
+.container {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1em;
+  color: #000000; /* Text colour */
+}
+
+ul {
+  /* As an alternative, try use FLex and align-items-center */
+  /* Then you do not need align-items-center in row and display:inline below */
+  /* display: flex; */
+
+  height: 100%;
+  padding: 0rem;
+}
+
+li {
+  /* You do not need this when using Flex */
+  display: inline; 
+  
+  padding-right: 4rem;
+  
+  /* Uncomment this line to see effect - use white border */
+  /*border: 1px solid;*/
+  
+  /* Used in conjunction with Flex */
+  /*align-self: center; */
+}
+
+li a {
+  color:white;
+}
