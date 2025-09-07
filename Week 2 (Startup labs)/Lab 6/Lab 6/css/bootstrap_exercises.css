@@ -1,0 +1,18 @@
+body { 
+    font-family: helvetica, arial, sans-serif;
+ }
+
+/* Create a style for each column */
+div[class*="col"] {
+    background-color: lightblue;
+    border: 1px solid white;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .container {
+    background-color: blue;
+  }
+  .container-fluid {
+    background-color:green;
+  }

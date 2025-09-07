@@ -1,0 +1,140 @@
+/*======= flexbox properties Start =========*/
+
+/**** container ****/
+/* display: flex; */
+/* flex-direction: row | row-reverse | column | column-reverse; */
+/* flex-wrap: wrap | no-wrap | wrap-reverse; */
+/* flex-flow: <flex-direction value> <flex-wrap value>; (shorthand for the two properties) */
+/* justify-content: flex-start | flex-end | center | space-between | space-around | space-evenly; */
+/* align-items: stretch | flex-start | flex-end | center | baseline; --> align items within the lines */
+/* align-content: flex-start | flex-end | center | space-between | space-around | stretch; --> align the lines within the container */
+
+/**** item ****/
+/* order: <a number>; (see example below) */
+/* flex-grow: <a number>; (relative to other items in the same continer, applied when there is more space than needed for base size) */
+/* flex-shrink: <a number>; (relative to other items in the same container, applied  when there is less space than needed for the base size) */
+/* flex-basis: <length> | auto; (the size of the element before the other properties are applied) */
+/* flex: <flex-grow value> <flex-shrink value> <flex-basis value>; (shorthand for the three properties) */
+/* align-self: auto | flex-start | flex-end | center | baseline | stretch; (individual alignment, overriding the one specified by align-items or default) */
+
+body { font-family: helvetica, arial, sans-serif; }
+
+/* Create a style for the Flexbox container */
+.flex-container {
+    /* Add property here to create a Flexbox container */
+
+    width: 100%;
+    padding: 0rem;
+    list-style: none;
+    border: 2px solid silver;
+    min-height: 12rem;
+}
+
+/* Create a style for each Flexbox item */
+.flex-item {
+    box-sizing: border-box;
+    width: 5.5rem;
+    min-height: 2.5rem;
+    margin: 0.1rem;
+    padding: 0.9rem;
+    color: white;
+    font-weight: bold;
+    font-size: 2rem;
+    text-align: center;
+}
+
+/* Create styles for each Flexbox item in each seperate Flexbox container(c1 to c7) */
+#c1 .flex-item { background-color: tomato; }
+#c2 .flex-item { background-color: aquamarine; }
+#c3 .flex-item { background-color: goldenrod; }
+#c4 .flex-item { background-color: greenyellow; }
+#c5 .flex-item { background-color: lightsalmon; }
+#c6 .flex-item { background-color: seagreen; }
+#c7 .flex-item { background-color: palevioletred; }
+
+/* Create the following styles below */
+
+
+/* Create styles for each Flexbox container(c1 to c5) */
+#c1 {
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#c2 {
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+#c3 {
+    flex-direction: row-reverse;
+    flex-wrap: wrap-reverse;
+    justify-content: flex-end;
+    align-content: flex-end;
+}
+
+#c4 {
+    height: 12rem;
+    flex-direction: column;
+    flex-wrap: wrap-reverse;
+    justify-content: flex-end;
+    align-content: center;
+}
+
+#c5 {
+    justify-content: space-evenly;
+}
+
+/* Create styles for each Flexbox item in Flexbox container c5 */
+#c5 .one {
+    align-self: flex-start;
+    order: 1;
+}
+#c5 .two {
+    align-self: flex-end;
+    order: 5;
+}
+#c5 .three {
+    align-self: flex-start;
+    order: 2;
+}
+#c5 .four {
+    align-self: flex-end;
+    order: 6;
+}
+#c5 .five {
+    align-self: flex-start;
+    order: 3;
+}
+#c5 .six {
+    align-self: flex-end;
+    order: 7;
+}
+#c5 .seven {
+    align-self: flex-start;
+    order: 4;
+}
+#c5 .eight {
+    align-self: flex-end;
+    order: 8;
+}
+
+/* Create styles for Flexbox item 4 & 5 in Flexbox container c6 */
+#c6 .four {
+    flex-grow: 1;
+}
+#c6 .five {
+    flex-grow: 1;
+}
+
+/* Create styles for Flexbox item 1, 2 & 3 in Flexbox container c7 */
+#c7 .one {
+    flex-basis: 25%;
+}
+#c7 .two {
+    flex-basis: 50%;
+}
+#c7 .three {
+    flex-basis: 25%;
+}
+
